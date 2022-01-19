@@ -4,7 +4,7 @@ export default class Doritos extends Component {
     render() {
         return (
             <div>
-                <h1>Doritos Component</h1>
+                <img alt='doritos' src='https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5000328462622_3.JPG' />
             </div>
         )
     }

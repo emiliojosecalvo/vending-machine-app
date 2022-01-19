@@ -4,7 +4,7 @@ export default class CocaCola extends Component {
     render() {
         return (
             <div>
-                <h1>Coca Cola Component</h1>
+                <img alt='coca-cola' src='https://cdn.huntoffice.ie/images/D.cache.large/can-of-coke.jpg' />
             </div>
         )
     }

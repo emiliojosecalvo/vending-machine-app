@@ -20,3 +20,8 @@
 .active {
   color: #d3ffc7;
 }
+
+img {
+  width: 40rem;
+  margin-top: 2rem;
+}

@@ -1,16 +1,21 @@
 // import * as React from 'react';
 import './App.css';
 import { Route, Routes, NavLink, Outlet } from 'react-router-dom';
-import Home from './Home';
 import VendingMachine from './VendingMachine';
+import Doritos from './Doritos';
+import Oreo from './Oreo';
+import CocaCola from './CocaCola';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path='/' element={<Layout />} >
-          <Route index element={<Home />} />
+          <Route index element={<VendingMachine />} />
           <Route path='vending-machine' element={<VendingMachine />} />
+          <Route path='doritos' element={<Doritos />} />
+          <Route path='oreo' element={<Oreo />} />
+          <Route path='coca-cola' element={<CocaCola />} />
         </Route>
       </Routes>
     </div>
@@ -19,9 +24,11 @@ function App() {
 
 function Layout() {
   return (<div>
-    <nav>
-      <NavLink to='/'>Home </NavLink>
-      <NavLink to='/vending-machine'>Vending Machine</NavLink>
+    <nav className='Navbar'>
+      <NavLink className={(d) => d.isActive ? 'active app-navlink' : 'app-navlink'} to='/'>Home</NavLink>
+      <NavLink className={(d) => d.isActive ? 'active app-navlink' : 'app-navlink'} to='/doritos'>Doritos</NavLink>
+      <NavLink className={(d) => d.isActive ? 'active app-navlink' : 'app-navlink'} to='/oreo'>Oreo</NavLink>
+      <NavLink className={(d) => d.isActive ? 'active app-navlink' : 'app-navlink'} to='/coca-cola'>Coca-Cola</NavLink>
     </nav>
 
     <Outlet />

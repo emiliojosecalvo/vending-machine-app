@@ -24,4 +24,5 @@
 img {
   width: 40rem;
   margin-top: 2rem;
+  max-width: 25rem;
 }

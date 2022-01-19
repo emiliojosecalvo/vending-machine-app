@@ -1,4 +1,3 @@
-// import * as React from 'react';
 import './App.css';
 import { Route, Routes, NavLink } from 'react-router-dom';
 import VendingMachine from './VendingMachine';
